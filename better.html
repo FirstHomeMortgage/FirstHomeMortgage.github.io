@@ -129,12 +129,17 @@ body {
 }
 
 .hero-image {
-  background-image: url("https://images.unsplash.com/photo-1626178793926-22b28830aa30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1000px; /* Adjust the height to your preference */
-  position: relative;
+    background-image: url("https://images.unsplash.com/photo-1626178793926-22b28830aa30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px; /* Set the height to 100% to cover the entire viewport */
+    position: fixed; /* Use "fixed" positioning to keep the image at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; /* Set a lower z-index to keep the content above the image */
+
 }
 
 .hero-text {
