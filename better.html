@@ -6,6 +6,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 <style>
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 body {margin:0;font-family:Open Sans}
 body {
   margin: 0;
@@ -137,6 +146,8 @@ text-align: center;
 }
 
 .hero-image {
+  animation: scaleAnimation 15s infinite alternate; /* Add animation properties */
+
     background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
     background-position: center;
     background-repeat: no-repeat;
